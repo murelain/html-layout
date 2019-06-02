@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Таблица</title>
+    <style type="text/css">
+      body {
+        font-family: Helvetica, sans-serif;
+        background: black;
+      }
+      table {
+        border: 3px solid black;
+        margin: 50px auto;
+      }
+      td {
+        border: 2px solid black;
+      }
+      .layout {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .element {
+        position: relative;
+        background: pink;
+        border-radius: 0 25px 0 0;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .element-big {
+        min-width: 210px;
+        min-height: 210px;
+        width: 210px;
+        height: 210px;
+      }
+
+      .element-big .title {
+        font-size: 6em;
+      }
+      .element-big .description {
+        font-size: 1.2em;
+      }
+      .element-small {
+        min-width: 90px;
+        min-height: 91px;
+      }
+
+      .index {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+      }
+      .description {
+        font-size: 0.8em;
+        font-weight: 600;
+      }
+      small {
+        font-weight: 200;
+      }
+      .bg-blue {
+        background: #4444ff;
+      }
+      .bg-orange {
+        background: orange;
+      }
+      .bg-pink {
+        background: #f96bbd;
+      }
+      .bg-red {
+        background: red;
+      }
+      .bg-purple {
+        background: #9758cc;
+      }
+      .bg-green {
+        background: lightgreen;
+      }
+      .title {
+        color: #fff;
+        font-size: 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="2">
+              <div class="element element-big bg-red">
+                <div class="index">1</div>
+                <div class="title">Iso</div>
+                <div class="description">
+                  An exquisite jQuery plugin for magical layouts
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="element element-small" style="background: #637aff;">
+                <div class="index">5</div>
+                <div class="title">B</div>
+                <div class="description">
+                  Boron
+                  <div>
+                    <small>10.811</small>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <div class="element element-small bg-blue">
+                <div class="index">6</div>
+                <div class="title">C</div>
+                <div class="description">
+                  Carbon
+                  <div>
+                    <small>12.0107</small>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="element element-small bg-blue">
+                <div class="index">8</div>
+                <div class="title">O</div>
+                <div class="description">
+                  Oxygen
+                  <div>
+                    <small>15.811</small>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="element element-small bg-purple">
+                <div class="index">9</div>
+                <div class="title">F</div>
+                <div class="description">
+                  Fluorine
+                  <div>
+                    <small>18.3463564</small>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="element element-small bg-pink">
+                <div class="index">10</div>
+                <div class="title">Ne</div>
+                <div class="description">
+                  Neon
+                  <div>
+                    <small>20.1797</small>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="element element-small bg-orange">
+                <div class="index">12</div>
+                <div class="title">Mg</div>
+                <div class="description">
+                  Magnesium
+                  <div>
+                    <small>24.335</small>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="2">
+              <div class="element element-big bg-orange">
+                <div class="index">11</div>
+                <div class="title">Fit</div>
+                <div class="description">
+                  Reveal & hide items with filtering
+                </div>
+              </div>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <div class="element element-small bg-blue">
+                <div class="index">15</div>
+                <div class="title">P</div>
+                <div class="description">
+                  Phosphorus
+                  <div>
+                    <small>30.078</small>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="element element-small bg-blue">
+                <div class="index">16</div>
+                <div class="title">S</div>
+                <div class="description">
+                  Sulfer
+                  <div>
+                    <small>32.078</small>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="element element-small bg-orange">
+                <div class="index">20</div>
+                <div class="title">Ca</div>
+                <div class="description">
+                  Calcium
+                  <div>
+                    <small>40.078</small>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="element element-small bg-green">
+                <div class="index">21</div>
+                <div class="title">Sc</div>
+                <div class="description">
+                  Scandium
+                  <div>
+                    <small>44.968</small>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
